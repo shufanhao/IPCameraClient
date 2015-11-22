@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/start_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="117.0dip"
+            android:background="@drawable/door_top_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_doorbell_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+          
+                android:text="IPCamera"
+                android:textColor="#ffffffff"
+                android:textSize="28.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="300dip"
+            android:background="@drawable/lisbackground"
+            android:gravity="center" >
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="108dp"
+               android:background="@anim/motionright" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_doorbell_ok"
+                    android:layout_width="75.0dip"
+                    android:layout_height="75.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/doorbell_ok" />
+                <ImageView
+                    android:id="@+id/getup_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/btn_doorbell_ok"
+                    android:background="@anim/doorbell_btn_anim" />
+                  <ImageButton
+                    android:id="@+id/btn_doorbell_no"
+                    android:layout_width="75.0dip"
+                    android:layout_height="75.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/doorbell_no" />
+                 <ImageView
+                    android:id="@+id/getup_arrow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btn_doorbell_no"
+                    android:background="@anim/doorbell_btn_no_anim" /> 
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

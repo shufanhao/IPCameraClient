@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qAndroid.ipcup1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    <application
+        
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+       >
+        <activity
+            android:name="com.qAndroid.ipcup1.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name"  android:name="com.qAndroid.ipcup1.indexcontent"/>
+        <activity android:label="@string/app_name"  android:name="com.qAndroid.ipcup1.ListenCall"/>
+        	
+		<activity
+		    android:name="com.qAndroid.ipcup1.SettingsActivity"
+		    android:label="设置" />
+		<activity
+		    android:name="com.qAndroid.ipcup1.AlbumActivity"
+			android:label="我的相册" />
+		<activity
+		    android:name="com.qAndroid.ipcup1.SqliteActivity"
+			android:label="我的摄像头" />
+		<activity
+		    android:name="com.qAndroid.ipcup1.IPCameraInfoEdit"
+			android:label="账户操作"/>
+		
+		<activity 
+		    android:name="com.qAndroid.ipcup1.UserActivity"
+		    android:label="功能介绍" />
+         <receiver android:name="com.qAndroid.ipcup1.MyReceiver" >
+            <intent-filter>
+                <action android:name="com.example.ipcup1.MY_ACTION" />
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.qAndroid.ipcup1.SecondService" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:stretchColumns="2"	
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:background="#FFFFFF">
+	<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" 
+        android:background="#8DB6CD">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"  >
+       
+       <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            
+            android:layout_gravity="center_vertical"
+            android:background="#0000"
+            android:src="@drawable/back_t" />
+       
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="账户设置"
+            android:textColor="#ffffff"
+            android:textSize="20dip" >
+        </TextView>
+        
+        
+    </RelativeLayout>
+    </FrameLayout>
+	
+	<TableRow 
+	    android:id="@+id/tableRow1" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView android:text="ip" 
+			android:gravity="right"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000000">
+		</TextView>
+		<EditText android:id="@+id/ipVal"
+			android:padding="3dip"
+			android:scrollHorizontally="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:minWidth="200px"
+			android:layout_span="1">
+		</EditText>
+	
+	</TableRow>
+		<TableRow>
+		   
+		<TextView android:text="port" 
+			android:gravity="right" 
+			android:padding="3dip"
+			android:textColor="#000000">
+			
+		</TextView>
+		<EditText android:id="@+id/portVal"  
+			android:padding="3dip"
+			android:scrollHorizontally="true"
+			android:layout_span="1">
+		</EditText>
+		
+	</TableRow>
+	<TableRow>
+	   
+		<TextView android:text="username" 
+			android:gravity="right" 
+			android:padding="3dip"
+			android:textColor="#000000">
+		</TextView>
+		<EditText android:id="@+id/usernameVal" 
+			android:padding="3dip"
+			android:scrollHorizontally="true"
+			android:layout_span="1">
+		</EditText>
+		
+	</TableRow>
+	<TableRow>
+	   
+		<TextView android:text="password" 
+			android:gravity="right" 
+			android:padding="3dip"
+			android:textColor="#000000">
+		</TextView>
+		<EditText android:id="@+id/passwordVal"  
+			android:padding="3dip"
+			android:scrollHorizontally="true"
+			android:layout_span="1">
+		</EditText>
+		
+	</TableRow>	
+	<TableRow>
+	    
+		<TextView android:text="series" 
+			android:gravity="right"
+			android:padding="3dip"
+			android:textColor="#000000">
+		</TextView>
+		<EditText android:id="@+id/seriesVal"
+			android:padding="3dip"
+			android:scrollHorizontally="true"
+			android:layout_span="1">
+		</EditText>
+		</TableRow>	
+		
+	<TableRow android:gravity="left">
+
+		
+      
+    	</TableRow>
+	<TableRow android:gravity="left">
+		<Button android:text="取消" 
+			android:id="@+id/cancel"
+			android:layout_width="150dip">
+		</Button>
+
+		<Button android:text="确定" 
+			android:layout_width="150dip"
+			android:id="@+id/ok">
+		</Button>
+	</TableRow>
+			<Button android:text="登陆" 
+			android:layout_width="80dip"
+			android:id="@+id/login">
+		</Button>
+	
+</TableLayout>

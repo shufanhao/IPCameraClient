@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+   
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" 
+        android:background="#8DB6CD">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"  >
+       
+       <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            
+            android:layout_gravity="center_vertical"
+            android:background="#0000"
+            android:src="@drawable/back_t" />
+       
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="参数设置"
+            android:textColor="#ffffff"
+            android:textSize="20dip" >
+         </TextView>
+        
+        <Button android:text="保存" 
+			android:id="@+id/save" 
+			android:layout_alignParentRight="true"
+			 android:background="#0000"
+			android:layout_width="50dip" 
+			android:layout_height="50dip"/>
+       
+        
+       
+    </RelativeLayout>
+    </FrameLayout>
+    <TextView android:id="@+id/textView1" 
+    	android:text="画面亮度" 
+    	android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textSize="22dip"/>
+    <EditText android:id="@+id/editText1" 
+		    android:hint="请输入0-15之间的数字，7为缺省值"
+			android:textSize="24px" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:minWidth="200px"
+			android:numeric="integer"/>
+    <TextView android:id="@+id/textView3" 
+    	android:text="画面对比度" 
+    	android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textSize="22dip"/>
+    <EditText android:id="@+id/editText2" 
+		    android:hint="请输入1-6之间的数字，4为缺省值"
+			android:textSize="24px" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:minWidth="200px"
+			android:numeric="integer"/>
+     <TextView android:id="@+id/textView4" 
+    	android:text="画面模式" 
+    	android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textSize="22dip"/>
+    <Spinner 
+    	android:entries="@array/ctype"
+   	 	android:layout_height="wrap_content" 
+   		android:layout_width="fill_parent" 
+    	android:id="@+id/spinner"/>
+    
+     <TextView android:id="@+id/textView2" 
+    	android:text="画面分辨率" 
+    	android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textSize="22dip"/>
+    <Spinner 
+    	android:entries="@array/ctype2"
+   	 	android:layout_height="wrap_content" 
+   		android:layout_width="fill_parent" 
+    	android:id="@+id/spinner2"/>
+    
+         <TextView android:id="@+id/textView6" 
+    	android:text="其他参数设置" 
+    	android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textSize="22dip"/>
+    
+    
+  
+     <LinearLayout
+        android:id="@+id/ptz_othersetview_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+       
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/letori"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin11"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+                 <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+               
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/uptodo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin2"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+               
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/updo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin3"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+              
+            </LinearLayout>
+             <LinearLayout
+                android:id="@+id/leri"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin4"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+              
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/stletori"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin5"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+               
+             
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stuptodo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin6"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+               
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin71"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+              
+            </LinearLayout>
+             <LinearLayout
+                android:id="@+id/reboot"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/lin8"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+              
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        
+   
+  
+
+</LinearLayout>
+
+

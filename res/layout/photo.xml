@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" 
+        android:background="#8DB6CD">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"  >
+       
+       <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            
+            android:layout_gravity="center_vertical"
+            android:background="#0000"
+            android:src="@drawable/back_t" />
+       
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="我的相册"
+            android:textColor="#ffffff"
+            android:textSize="20dip" >
+        </TextView>
+        
+        
+    </RelativeLayout>
+    </FrameLayout>
+     
+   
+     
+    <ImageSwitcher
+        android:id="@+id/switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="350dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+ 
+    <Gallery
+        android:id="@+id/mygallery"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:unselectedAlpha="0.6"
+        android:spacing="5px" />
+     
+</LinearLayout>

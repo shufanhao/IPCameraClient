@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/tableLayout1"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_vertical"
+	android:stretchColumns="0,3"
+	 android:background="@drawable/login">
+	 
+	<TextView android:text="     " 
+			android:id="@+id/textV" 
+			android:layout_width="wrap_content"
+			android:textSize="100px" 
+			android:layout_height="wrap_content"
+			
+			/>
+	
+	<TextView android:text="     请填写您IPCamera的相关信息：" 
+			android:id="@+id/textView0" 
+			android:layout_width="wrap_content"
+			android:textSize="24px" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			/>
+	<!-- 第一行 -->
+	<TableRow android:id="@+id/tableRow1" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView/>
+		<TextView android:text="IP ：" 
+			android:id="@+id/textView1" 
+			android:layout_width="wrap_content"
+			android:textSize="24px" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			/>
+		<EditText android:id="@+id/editText1" 
+		    android:hint="请输入IP地址或域名"
+			android:textSize="24px" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" android:minWidth="200px"/>
+		<TextView />
+	</TableRow>
+	<!-- 第二行 -->	
+	<TableRow android:id="@+id/tableRow2" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView/>
+		<TextView android:text="端口：" 
+			android:id="@+id/textView2" 
+			android:textSize="24px" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"/>
+		<EditText android:layout_height="wrap_content" 
+		    android:hint="请输入端口号"
+			android:layout_width="wrap_content" 
+			android:textSize="24px" 
+			android:id="@+id/editText2" />
+		<TextView />
+	</TableRow>
+	<!-- 第三行 -->	
+	<TableRow android:id="@+id/tableRow3" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView/>
+		<TextView android:text="账号：" 
+			android:id="@+id/textView3" 
+			android:textSize="24px" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"/>
+		<EditText android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:textSize="24px" 
+			android:id="@+id/editText3" />
+		<TextView />
+	</TableRow>
+	<!-- 第四行 -->	
+	<TableRow android:id="@+id/tableRow4" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView/>
+		<TextView android:text="密码：" 
+			android:id="@+id/textView4" 
+			android:textSize="24px" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"/>
+		<EditText android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:textSize="24px" 
+			android:id="@+id/editText4" 
+			android:inputType="textPassword"/>
+		<TextView />
+	</TableRow>
+	<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" >		
+	<TextView android:text="IPCamera的类型：" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:height="80px"
+			android:textColor="#000000"/>
+		<RadioGroup 
+		android:id="@+id/radioGroup1"
+		android:orientation="horizontal" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<RadioButton 
+			android:layout_height="wrap_content" 
+			android:id="@+id/radio0" 
+			android:text="B系列" 
+			android:layout_width="wrap_content" 
+			android:textColor="#000000"
+			android:checked="true"/>
+		<RadioButton 
+			android:layout_height="wrap_content" 
+			android:id="@+id/radio1" 
+			android:text="H系列" 
+			android:textColor="#000000"
+			android:layout_width="wrap_content"/>
+	</RadioGroup>
+	</LinearLayout>	
+
+		 <CheckBox
+        android:id="@+id/cb_mima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_div"
+        android:layout_below="@+id/login_div"
+        android:text="记住密码"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/cb_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_mima"
+        android:layout_below="@+id/cb_mima"
+        android:text="自动登录"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+   
+    <!-- 第六行 -->
+	<TableRow android:id="@+id/tableRow6" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView/>
+		
+		<Button android:text="退出" 
+			android:id="@+id/exit" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"/>
+		<Button android:text="登录" 
+			android:id="@+id/login" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"/>
+		<TextView />
+	</TableRow>
+	<TextView android:text="        " 
+			android:id="@+id/textView6" 
+			android:layout_width="wrap_content"
+			android:textSize="24px" 
+			android:layout_height="wrap_content"
+			/>
+	<TextView android:text="        " 
+			android:id="@+id/textView7" 
+			android:layout_width="wrap_content"
+			android:textSize="24px" 
+			android:layout_height="wrap_content"
+			/>
+
+</TableLayout>

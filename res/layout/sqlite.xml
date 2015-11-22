@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" 
+        android:background="#8DB6CD">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"  >
+       
+       <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            
+            android:layout_gravity="center_vertical"
+            android:background="#0000"
+            android:src="@drawable/back_t" />
+       
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="我的摄像头"
+            android:textColor="#ffffff"
+            android:textSize="20dip" >
+        </TextView>
+        
+        
+    </RelativeLayout>
+    </FrameLayout>
+    
+    <ListView 
+    	android:id="@+id/android:list" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content">
+    </ListView>
+    <TextView 
+    	android:id="@+id/android:empty"
+    	android:text="点击Menu按钮添加ipcamera信息" 
+    	android:layout_height="wrap_content"      
+    	android:layout_width="wrap_content"
+    	android:background="#000000">
+    </TextView>
+   
+</LinearLayout>

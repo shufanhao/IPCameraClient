@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip" 
+         android:background="@drawable/title">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"  >
+       
+       <ImageButton
+            android:id="@+id/list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:background="#0000"
+            android:src="@drawable/ic_laun" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="监控画面"
+            android:textColor="#ffffffff"
+            android:textSize="22dip" >
+        </TextView>
+        
+        
+    </RelativeLayout>
+         <TextView 
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="@string/init_time_second"
+            android:textSize="20dip"
+            android:textColor="#ffffff"
+            />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:background="#000000" >
+
+        <!-- 获取视频 ,当有视频时则imageview就会覆盖掉下面这个linearlayout -->
+
+        <LinearLayout
+            android:id="@+id/progresslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/connecting_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/connecting" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/urlImg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+   
+     <!-- 下面是按钮实现部分,通过三个linearlayout的嵌套实现 -->
+
+    <LinearLayout
+        android:id="@+id/ptz_othersetview_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ly_doorbell_set"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_1"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_doorbell_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top"
+                    android:paddingTop="10.0dip"
+                    android:text="参数设置"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_doorbell_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button2"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_doorbell_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top"
+                    android:paddingTop="10.0dip"
+                    android:text="照相"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_doorbell_vq"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_3"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_doorbell_vq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top"
+                    android:paddingTop="10.0dip"
+                    android:text="开锁"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ly_doorbell_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_4"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_doorbell_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top"
+                    android:paddingTop="10.0dip"
+                    android:text="画面刷新"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+
+                <!-- <ImageButton
+                    android:id="@+id/show_and_gone"
+                    android:layout_width="70.0dip"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/play_button_selector"
+                    android:src="@drawable/show_and_gone"
+                    android:visibility="visible"/> -->e
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_doorbell_hz"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_53"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_doorbell_hz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top"
+                    android:paddingTop="10.0dip"
+                    android:text="铃声选择"
+                    android:textColor="#ffffffff"	
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_doorbell_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_61"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_doorbell_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top"
+                    android:paddingTop="10.0dip"
+                    android:text="退出登录"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    
+  
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ctype">
+    	<item>请选择</item>
+    	<item>50Hz</item>
+    	<item>60Hz</item>
+    	<item>室外模式</item>
+    	
+    </string-array>
+    <string-array name="ctype2">
+        <item>请选择</item>
+    	<item>低分辨率</item>
+    	<item>高分辨率</item>
+    </string-array>
+     <string-array name="ctype3">
+         <item>请选择</item>
+    	<item>0</item>
+    	<item>1</item>
+    	<item>2</item>
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    </string-array>
+</resources>

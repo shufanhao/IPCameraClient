@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:visible="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="350" android:drawable="@drawable/call_no_1" />
+    <item android:duration="350" android:drawable="@drawable/call_no_2" />
+    <item android:duration="350" android:drawable="@drawable/call_no_3" />
+</animation-list>
